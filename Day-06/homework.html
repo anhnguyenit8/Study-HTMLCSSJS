@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <style>
+      #deleteButton {
+        width: 10%;
+        height: 45px;
+        font-size: 15px;
+        color: white;
+        background-color: brown;
+        border: 1px solid #fff;
+        border-radius: 10px;
+      }
+      #deleteButton:hover {
+        background-color: rgb(116, 30, 30);
+      }
+      #clickMe {
+        width: 20%;
+        height: 45px;
+        font-size: 15px;
+        color: white;
+        background-color: rgb(42, 165, 116);
+        border: 1px solid #fff;
+        border-radius: 10px;
+      }
+      #clickMe:hover {
+        background-color: rgb(21, 88, 61);
+      }
+
+      #hinhVuong {
+        width: 30%;
+        height: 100px;
+        border: 2px solid #fff;
+        background-color: yellow;
+        text-align: center;
+        line-height: 100px;
+      }
+      #hinhVuong:hover {
+        background-color: rgb(107, 107, 13);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="deleteButton">Delete Record</button>
+    <button id="clickMe">Click Me To Get Money!!!</button>
+
+    <div id="hinhVuong">Đây Là hình vuông</div>
+    <div>Bắt sự kiện: <input type="text" id="myInput" /></div>
+
+    <script>
+      // Task 1
+      //   let username = prompt("Enter your name:");
+      //   let password = prompt("Enter password:");
+      //   document.write("Task 1" + "<br>");
+      //   document.write("Your name is: " + username + "<br>");
+      //   document.write("Your Password: " + password + "<br>");
+      //Task 2
+      //   let a = prompt("Enter a: ");
+      //   let b = prompt("Enter b: ");
+      //   a = parseFloat(a);
+      //   b = parseFloat(b);
+      //   document.write("Task 2" + "<br>");
+      //   document.write("x = a + b = " + (a + b) + "<br>");
+      //   document.write("y = a - b = " + (a - b) + "<br>");
+      //Task 3
+      let deleteButton = document.getElementById("deleteButton");
+      deleteButton.onclick = function () {
+        let confirmResult = confirm(
+          "Bạn có chắc chắn muốn xóa record này không ?"
+        );
+        if (confirmResult === true) {
+          document.write("Bạn đã xóa record");
+        } else {
+          document.write("Bạn đã hủy");
+        }
+      };
+      //Task 4
+      let hinhVuong = document.getElementById("hinhVuong");
+      hinhVuong.onmouseover = function () {
+        console.log("Bạn đã rê chuột vào tôi");
+      };
+      //Task 5
+      let clickMe = document.getElementById("clickMe");
+      clickMe.onclick = function () {
+        console.log(
+          "Bạn đã click chuột vào tôi nhưng không có tiền cho bạn đâu hehe ^^"
+        );
+      };
+      //Task 6
+      let input = document.getElementById("myInput");
+      input.onkeypress = function (event) {
+        console.log("onkeypress: " + event.key);
+      };
+      input.onkeyup = function (event) {
+        console.log("onkeyup: " + event.key);
+      };
+      input.onkeydown = function (event) {
+        console.log("onkeydown: " + event.key);
+      };
+    </script>
+  </body>
+</html>

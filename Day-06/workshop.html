@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop</title>
+  </head>
+  <body>
+    <button id="myButton">Click vào đây</button>
+
+    <script>
+      console.log("Task 1 ");
+      let a = 5;
+      let b = 3;
+      console.log("Giá trị của biến a: " + a);
+      console.log("Giá trị của biến b: " + b);
+
+      console.log("a * b = " + a * b);
+      console.log("a + b = " + (a + b));
+      console.log("a - b = " + (a - b));
+      console.log("a / b = " + a / b);
+
+      a = 10;
+      b = 20;
+      console.log("Giá trị của biến a: " + a);
+      console.log("Giá trị của biến b: " + b);
+      console.log("a * b = " + a * b);
+      console.log("a + b = " + (a + b));
+      console.log("a - b = " + (a - b));
+      console.log("a / b = " + a / b);
+
+      console.log("Task 2 ");
+
+      let x = prompt("Nhập giá trị cho biến x:");
+      let y = prompt("Nhập giá trị cho biến y:");
+
+      // Chuyển đổi giá trị nhập vào thành kiểu số
+      x = parseFloat(x);
+      y = parseFloat(y);
+
+      alert("x * y = " + x * y);
+      alert("x + y = " + (x + y));
+      alert("x - y = " + (x - y));
+
+      console.log("x * y = " + x * y);
+      console.log("x + y = " + (x + y));
+      console.log("x - y = " + (x - y));
+
+      // Lấy tham chiếu đến nút button bằng cách sử dụng id
+      var button = document.getElementById("myButton");
+
+      // Bắt sự kiện onclick và in ra màn hình console
+      button.onclick = function () {
+        alert("Bạn đã Click");
+      };
+
+      console.log("Task 4 ");
+      let tenSinhVien = "Nguyễn Văn A";
+      let tuoiSinhVien = 20;
+      let gioiTinhSinhVien = true; // true là Nam, false là Nữ
+      let queQuanSinhVien = "Hà Nội";
+
+      console.log("Tên sinh viên: " + tenSinhVien);
+      console.log("Tuổi sinh viên: " + tuoiSinhVien);
+      console.log("Giới tính sinh viên: " + (gioiTinhSinhVien ? "Nam" : "Nữ"));
+      console.log("Quê quán sinh viên: " + queQuanSinhVien);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xuất giá trị chuỗi</title>
+    <script>
+      function xuatGiaTriChuoi() {
+        const inputElement = document.getElementById("inputChuoi");
+        const chuoi = inputElement.value;
+        console.log(chuoi); // Xuất giá trị chuỗi vào Console
+
+        // Xuất giá trị chuỗi vào một phần tử HTML có id là "outputDiv"
+        const outputElement = document.getElementById("outputDiv");
+        outputElement.textContent = chuoi;
+      }
+    </script>
+  </head>
+  <body>
+    <label for="inputChuoi">Nhập chiều cao của bạn</label>
+    <input type="text" id="inputChuoi" />
+    <button onclick="xuatGiaTriChuoi()">Enter</button>
+    <br />
+    <label for="inputChuoi">Chiều cao của bạn là:</label>
+    <div id="outputDiv"></div>
+  </body>
+</html>

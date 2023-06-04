@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .main-content {
+        width: 80%;
+      }
+
+      nav {
+        background-color: orange;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      nav .brand {
+      }
+      nav ul {
+        display: block;
+        list-style: none;
+        height: 50px;
+      }
+      nav ul li {
+        display: inline-block;
+        padding: 0 15px;
+      }
+      nav ul li :hover {
+        background-color: rgb(124, 82, 3);
+      }
+
+      nav ul li a {
+        color: #fff;
+        line-height: 50px;
+        text-decoration: none;
+      }
+
+      nav ul li .nav-sub {
+        display: none;
+      }
+
+      nav ul li:hover .nav-sub {
+        display: block;
+        position: absolute;
+        left: 0;
+      }
+
+      /* nav div > ul {
+        background-color: orange;
+        list-style: none;
+        column-gap: 10px;
+      }
+      nav div > ul,
+      main {
+        display: flex;
+      }
+      nav div > ul > li {
+        padding: 0 10px;
+        position: relative;
+        height: 45px;
+        width: auto;
+      }
+      nav div ul li :hover {
+        background-color: wheat;
+      }
+      aside {
+        width: 40%;
+        background-color: aqua;
+        height: 400px;
+      }
+      nav div > ul > li > .nav-sub {
+        display: none;
+        width: 200px;
+        background-color: orange;
+        position: absolute;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 1);
+        top: 45px;
+        left: 0;
+      }
+      nav div ul li a {
+        text-decoration: none;
+        color: white;
+        line-height: 45px;
+      }
+      nav div ul li a :hover {
+        background-color: #242526;
+        color: white;
+      }
+
+      nav div > ul > li:hover > .nav-sub {
+        display: block;
+      }
+      nav div > ul > li:hover > .nav-sub a {
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="brand">FakeShoppe</div>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="Menu">Home</a>
+              <div class="nav-sub">
+                <a>Menu 1</a>
+                <a>Menu 2</a>
+                <a>Menu 3</a>
+              </div>
+            </li>
+            <li>
+              <a href="About">Blog</a>
+            </li>
+            <li>
+              <a href="Product">Shop</a>
+            </li>
+            <li>
+              <a href="Product">Product</a>
+            </li>
+            <li>
+              <a href="Product">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Body -->
+    <!-- <main>
+      <section class="main-content">Main content</section>
+      <aside>aside bar</aside>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-item">1</div>
+        <div class="footer-item">2</div>
+        <div class="footer-item">3</div>
+        <div class="footer-item">4</div>
+      </div>
+      <div class="copyright"></div>
+    </footer> -->
+  </body>
+</html>

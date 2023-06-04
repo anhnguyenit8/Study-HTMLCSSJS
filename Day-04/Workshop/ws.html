@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      .nav-bar {
+        background-color: #111;
+      }
+      div nav {
+        background-color: #a52a2a;
+      }
+      div nav ul {
+        display: flex;
+        list-style: none;
+        column-gap: 15px;
+      }
+      div nav ul li {
+        padding: 0 10px 0 10px;
+        position: relative;
+        height: 45px;
+      }
+      div nav ul li :hover {
+        background-color: #7a1f1f;
+      }
+      div nav ul a {
+        text-decoration: none;
+        color: #fff;
+      }
+      div nav ul li a {
+        line-height: 45px;
+      }
+
+      /* body */
+      main {
+        display: flex;
+        height: 550px;
+      }
+      .main-content {
+        flex: 3;
+        background-color: aqua;
+      }
+      aside {
+        flex: 1;
+        background-color: yellowgreen;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        margin: 20px;
+        justify-content: space-between;
+        background-color: #111;
+        height: 400px;
+      }
+      .img-product {
+        padding: 10px;
+      }
+      .detail-product {
+        padding: 10px;
+        color: #fff;
+        font-size: 20px;
+      }
+      .section-tag {
+        margin: 20px;
+        height: 50px;
+        background-color: #111;
+        color: #fff;
+      }
+      .flex {
+        display: flex;
+      }
+      .container-foot {
+        background-color: #111;
+      }
+      .point {
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .point .item {
+        width: calc((100% - 40px) / 4);
+        background-color: #111;
+        color: #fff;
+        height: 280px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .item {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="nav-bar">
+        <nav>
+          <ul>
+            <li href="Home"><a>Home</a></li>
+            <li href="Blog"><a>Blog</a></li>
+            <li href="Services"><a>Services</a></li>
+            <li href="Contact"><a>Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Body -->
+    <main>
+      <section class="main-content">
+        <div class="container">
+          <article class="img-product">
+            <img src="girl.png" height="100%" width="auto" />
+          </article>
+          <article class="detail-product">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              sequi natus quisquam quaerat ex praesentium similique non, rem
+              doloribus, harum repellat vitae omnis debitis id quod in illo
+              maiores quo?Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Deleniti excepturi exercitationem, totam quibusdam tenetur,
+              molestiae facere doloremque vero iusto atque quas dicta mollitia
+              porro earum magni quae odio officiis consequuntur. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Quae similique facere
+              voluptates necessitatibus sint earum ipsum quisquam omnis
+              praesentium architecto voluptatum esse repellat quam, laboriosam
+              optio, quis minima magni. Itaque!
+            </p>
+          </article>
+        </div>
+        <div class="section-tag">
+          <section><a>Section Tag</a></section>
+        </div>
+      </section>
+      <aside>slidebar</aside>
+    </main>
+    <!-- Foot -->
+    <footer>
+      <div class="container-foot">
+        <div class="point flex">
+          <div class="item">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque obcaecati et, provident dolores possimus rerum optio
+                sequi quos ullam esse nesciunt, ut illum dignissimos deserunt
+                laborum recusandae velit perferendis consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque obcaecati et, provident dolores possimus rerum optio
+                sequi quos ullam esse nesciunt, ut illum dignissimos deserunt
+                laborum recusandae velit perferendis consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque obcaecati et, provident dolores possimus rerum optio
+                sequi quos ullam esse nesciunt, ut illum dignissimos deserunt
+                laborum recusandae velit perferendis consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque obcaecati et, provident dolores possimus rerum optio
+                sequi quos ullam esse nesciunt, ut illum dignissimos deserunt
+                laborum recusandae velit perferendis consequuntur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

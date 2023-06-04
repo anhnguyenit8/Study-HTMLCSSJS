@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: beige;
+      }
+      .flex {
+        display: flex;
+      }
+      .container {
+        max-width: 1200px;
+      }
+      .hot_points item {
+        width: calc(100% / 3);
+        border-right: 1px solid black;
+        justify-content: center;
+      }
+      .hot_points item i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+      .product-list {
+        /* height: 400px; */
+        justify-content: space-between;
+        border: 1px solid red;
+        flex-wrap: wrap;
+        /* row-gap: 10px; */
+      }
+      .product-list item {
+        width: calc((100% - 40px) / 5);
+        background-color: white;
+        height: 280px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hot_points flex">
+        <div class="item flex">
+          <div class="icon"><i class="fa fa-rocket"></i></div>
+          <div class="content">
+            <h4>FREE SHIPPING & RETURN</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="icon"><i class="fa fa-rocket"></i></div>
+          <div class="content">
+            <h4>FREE SHIPPING & RETURN</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="item flex">
+          <div class="icon"><i class="fa fa-rocket"></i></div>
+          <div class="content">
+            <h4>FREE SHIPPING & RETURN</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-list flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+    </div>
+  </body>
+</html>
